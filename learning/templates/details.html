@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sup Mate</h1>
+    {% for single_member in single_member_data%}
+
+        <h1>{{single_member.f_name}} {{single_member.l_name}}</h1>
+        <ul>
+            <li>{{single_member.f_name}} {{single_member.l_name}}</li>
+            <li>{{single_member.email}}</li>
+        </ul>
+    
+
+    {% endfor%}
+    <a href="{% url 'home'%}">Back</a>
+    
+</body>
+</html>
